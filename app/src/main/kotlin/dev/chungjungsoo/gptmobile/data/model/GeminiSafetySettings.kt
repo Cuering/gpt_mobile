@@ -1,7 +1,7 @@
 package dev.chungjungsoo.gptmobile.data.model
 
 import androidx.annotation.StringRes
-import dev.chungjungsoo.gptmobile.R
+import com.lanxin.android.R
 
 object GeminiSafetySettings {
     const val BLOCK_NONE = "BLOCK_NONE"

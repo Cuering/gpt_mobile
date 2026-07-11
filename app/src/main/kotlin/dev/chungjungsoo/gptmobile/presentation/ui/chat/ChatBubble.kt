@@ -44,7 +44,7 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import dev.chungjungsoo.gptmobile.R
+import com.lanxin.android.R
 import dev.chungjungsoo.gptmobile.presentation.theme.LanXinTheme
 import java.io.File
 

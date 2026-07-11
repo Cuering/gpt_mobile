@@ -2,7 +2,7 @@ package dev.chungjungsoo.gptmobile.util
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import dev.chungjungsoo.gptmobile.R
+import com.lanxin.android.R
 import dev.chungjungsoo.gptmobile.data.dto.APIModel
 import dev.chungjungsoo.gptmobile.data.model.ApiType
 import dev.chungjungsoo.gptmobile.data.model.ClientType

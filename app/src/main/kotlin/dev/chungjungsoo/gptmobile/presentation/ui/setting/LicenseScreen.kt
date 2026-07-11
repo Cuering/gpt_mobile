@@ -22,7 +22,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.mikepenz.aboutlibraries.ui.compose.android.produceLibraries
 import com.mikepenz.aboutlibraries.ui.compose.m3.LibrariesContainer
-import dev.chungjungsoo.gptmobile.R
+import com.lanxin.android.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
