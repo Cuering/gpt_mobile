@@ -51,7 +51,7 @@ fun StartScreen(onStartClick: () -> Unit) {
 fun StartScreenLogo(modifier: Modifier = Modifier) {
     Image(
         imageVector = GptMobileStartScreen,
-        contentDescription = stringResource(R.string.gpt_mobile_introduction_logo),
+        contentDescription = stringResource(R.string.lanxin_introduction_logo),
         contentScale = ContentScale.FillHeight,
         modifier = modifier
             .padding(top = 50.dp)
