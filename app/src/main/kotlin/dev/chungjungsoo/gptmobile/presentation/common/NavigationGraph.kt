@@ -60,7 +60,7 @@ fun NavGraphBuilder.migrationScreenNavigation(navController: NavHostController) 
 
 fun NavGraphBuilder.startScreenNavigation(navController: NavHostController) {
     composable(Route.GET_STARTED) {
-        StartScreen { navController.navigate(Route.SETUP_ROUTE) }
+        StartScreen { navController.navigate(Route.CHAT_LIST) { popUpTo(Route.GET_STARTED) { inclusive = true } } }
     }
 }
 

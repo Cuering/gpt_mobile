@@ -16,12 +16,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.lanxin.android.R
 import com.lanxin.android.presentation.common.PrimaryLongButton
 import com.lanxin.android.presentation.icons.GptMobileStartScreen
 
@@ -40,7 +38,7 @@ fun StartScreen(onStartClick: () -> Unit) {
             WelcomeText()
             PrimaryLongButton(
                 onClick = onStartClick,
-                text = stringResource(R.string.get_started)
+                text = "开始使用"
             )
         }
     }
@@ -51,7 +49,7 @@ fun StartScreen(onStartClick: () -> Unit) {
 fun StartScreenLogo(modifier: Modifier = Modifier) {
     Image(
         imageVector = GptMobileStartScreen,
-        contentDescription = stringResource(R.string.lanxin_introduction_logo),
+        contentDescription = "兰心启动页图标",
         contentScale = ContentScale.FillHeight,
         modifier = modifier
             .padding(top = 50.dp)
@@ -71,12 +69,12 @@ fun WelcomeText(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .padding(4.dp)
                 .semantics { heading() },
-            text = stringResource(R.string.welcome_title),
+            text = "欢迎使用兰心",
             style = MaterialTheme.typography.headlineMedium
         )
         Text(
             modifier = Modifier.padding(4.dp),
-            text = stringResource(R.string.welcome_description),
+            text = "你的专属 AI 助手，随时陪伴，有问必答",
             style = MaterialTheme.typography.bodyLarge
         )
     }
