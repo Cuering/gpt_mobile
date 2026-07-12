@@ -44,5 +44,9 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideLanXinAPI(): LanXinAPI = LanXinAPIImpl()
+    fun provideLanXinAPI(networkClient: NetworkClient): LanXinAPI = LanXinAPIImpl(networkClient)
+
+    @Provides
+    @Singleton
+    fun provideLanXinAuthClient(networkClient: NetworkClient): LanXinAuthClient = LanXinAuthClient(networkClient)
 }
